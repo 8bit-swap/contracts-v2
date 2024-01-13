@@ -1,5 +1,6 @@
 require('dotenv').config()
 import { HardhatUserConfig } from 'hardhat/config'
+import "@nomicfoundation/hardhat-ledger";
 import '@typechain/hardhat'
 import '@nomicfoundation/hardhat-viem'
 import 'hardhat-gas-reporter'
@@ -22,7 +23,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
         url: process.env.JUNE_RPC,
         chainId: 0, // TODO
         gasPrice: 0, // TODO
-        accounts: [deployerPrivateKey],
+        ledgerAccounts: [deployerAddress],
         verify: {
           etherscan: {
             apiKey: process.env.JUNE_APIKEY,
@@ -33,7 +34,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
         url: process.env.JUNE_SOCOTRA_RPC,
         chainId: 101003,
         gasPrice: 48000000000,
-        accounts: [deployerPrivateKey],
+        ledgerAccounts: [deployerAddress],
         verify: {
           etherscan: {
             apiKey: process.env.JUNE_SOCOTRA_APIKEY,
