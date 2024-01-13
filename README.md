@@ -1,4 +1,4 @@
-# Solidity Layer Zero
+# Solidity 8Bit-Swap
 
 Uniswap V2 core and periphery contracts fork.
 Contracts have been adapted for use with Solidity version 0.6.12
