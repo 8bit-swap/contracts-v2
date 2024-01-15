@@ -53,8 +53,8 @@ npx hardhat --network [network] etherscan-verify # Verify deployed smart contrac
 ### June
 
 ### June Socotra
-- **UniswapV2Factory** : 0xD1E879Df1B58c02fc39c76a2A5bF5196b3122189
-- **UniswapV2Router02** : 0x025DA3679Aa270625FCCc8119be9696c41792A11
+- **UniswapV2Factory** : 0x0D5eCAacDfD2BA156d2a70e31A3A9586fF6868c9
+- **UniswapV2Router02** : 0x41645CE5D1bC1e6997A1e6f4d8A580102C162062
 
 
 ## Faucets
