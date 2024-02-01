@@ -1,7 +1,7 @@
-# Solidity 8Bit-Swap
+# Solidity 8-Bit Swap
 
-Uniswap V2 core and periphery contracts fork.
-Contracts have been adapted for use with Solidity version 0.6.12
+SushiSwap V2 core and periphery contracts fork.
+SushiSwap migrator related lines have been deleted
 ## Deployment steps
 
 ### 0. Check .env & harhat.config.ts 
@@ -53,8 +53,8 @@ npx hardhat --network [network] etherscan-verify # Verify deployed smart contrac
 ### June
 
 ### June Socotra
-- **UniswapV2Factory** : 0x0D5eCAacDfD2BA156d2a70e31A3A9586fF6868c9
-- **UniswapV2Router02** : 0x41645CE5D1bC1e6997A1e6f4d8A580102C162062
+- **UniswapV2Factory** : 0xcF378A5332e6B6A08D8E71BbDEc95B002b65588D
+- **UniswapV2Router02** : 0xd0b6076b64660652D22Fc19C7A3B40b46B0C7039
 
 
 ## Faucets

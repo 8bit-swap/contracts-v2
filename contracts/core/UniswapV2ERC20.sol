@@ -3,12 +3,11 @@
 pragma solidity =0.6.12;
 
 import '../libraries/SafeMath.sol';
-import '../interfaces/IUniswapV2ERC20.sol';
 
 contract UniswapV2ERC20 {
     using SafeMathUniswap for uint;
 
-    string public constant name = '8Bit-Swap LP V2';
+    string public constant name = '8-Bit Swap LP V2';
     string public constant symbol = '8BIT-V2';
     uint8 public constant decimals = 18;
     uint  public totalSupply;
