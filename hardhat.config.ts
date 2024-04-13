@@ -62,7 +62,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
           settings: {
             optimizer: {
               enabled: true,
-              runs: 200,
+              runs: 9999,
             },
             //viaIR: true
           },
