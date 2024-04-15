@@ -52,7 +52,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
       },
       WETH: {
         june: "TODO",
-        june_socotra: "0xDce22197228e8Ae74bC9D07539A29Ea9F6DE372a"
+        june_socotra: "0xc984ae20d0fed3b974959bcbd1721167214cded9"
       }
     },
     solidity: {
@@ -62,7 +62,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
           settings: {
             optimizer: {
               enabled: true,
-              runs: 9999,
+              runs: 200,
             },
             //viaIR: true
           },
