@@ -25,11 +25,11 @@ It is possible to verify all contracts deployed on the same network at once. If 
 
 - **Set feeTo**
   ```shell
-  npx hardhat set-fee-to --network [network] --feeto [address]
+  npx hardhat set-fee-to --network [network] --fee-to [address]
   ```
 - **Set feeToSetter**
   ```shell
-  npx hardhat set-fee-to-setter --network [network] --feetosetter [address]
+  npx hardhat set-fee-to-setter --network [network] --fee-to-setter [address]
   ```
 - **Skim**
   ```shell

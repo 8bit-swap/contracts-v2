@@ -13,7 +13,7 @@ const deployerAddress =
 const deployerPrivateKey =
   process.env.DEPLOYER_PRIVATE_KEY ||
   '0000000000000000000000000000000000000000000000000000000000000000'
-const feeToAddress = process.env.FEE_TO_ADDRESS ||
+const feeToSetterAddress = process.env.FEE_TO_SETTER_ADDRESS ||
 '0000000000000000000000000000000000000000000000000000000000000000'
 
   const config: HardhatUserConfig = {
@@ -32,7 +32,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
       june_socotra: {
         url: process.env.JUNE_SOCOTRA_RPC,
         chainId: 101003,
-        gasPrice: 48000000000,
+        gasPrice: 144000000000,
         accounts: [deployerPrivateKey],
         verify: {
           etherscan: {
@@ -48,7 +48,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
       },
       feeToSetter: {
         june: "TODO",
-        june_socotra: feeToAddress
+        june_socotra: feeToSetterAddress
       },
       WETH: {
         june: "TODO",
@@ -62,7 +62,7 @@ const feeToAddress = process.env.FEE_TO_ADDRESS ||
           settings: {
             optimizer: {
               enabled: true,
-              runs: 200,
+              runs: 999999,
             },
             //viaIR: true
           },
