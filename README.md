@@ -16,10 +16,9 @@ SushiSwap migrator related lines have been deleted
 `npx hardhat deploy --network june_socotra --tags UniswapV2Router02`
 
 
-### 3. Verifiy contracts
-It is possible to verify all contracts deployed on the same network at once. If a contract is already checked, it will simply ignore it.
-
-`npx hardhat --network june_socotra etherscan-verify`
+### 3. Verify contracts
+You can verify one contract using this command (it does not currently work)
+`npx hardhat verify --network <network> <contract_address_deployed> "<constructor_parameter>"`
 
 ## Tasks
 
@@ -46,7 +45,7 @@ It is possible to verify all contracts deployed on the same network at once. If 
 npx hardhat compile # Compile all smart contracts
 npx hardhat test ./test/[file.ts] # Run tests
 npx hardhat deploy --network [network] --tags [tag] # Deploy a smart contract
-npx hardhat --network [network] etherscan-verify # Verify deployed smart contracts of a network
+npx hardhat verify --network [network] [contract_address_deployed] "[constructor_parameter]" # Verify a contract
 ```
 
 ## Deployments
